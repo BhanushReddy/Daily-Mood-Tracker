@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="project6.css">
+</head>
+<body>
+    <div class="container">
+        <h1>How are you feeling today?</h1>
+        
+        <!-- Date & Month Selection -->
+        <div class="date-picker">
+            <label for="mood-date">Select a Date:</label>
+            <input type="date" id="mood-date">
+        </div>
+
+        <div class="month-selector">
+            <button id="prev-month">⬅ Prev</button>
+            <span id="current-month"></span>
+            <button id="next-month">Next ➡</button>
+        </div>
+
+        <!-- Mood Selection -->
+        <div class="mood-buttons">
+            <button class="mood" data-mood="happy">😊 Happy</button>
+            <button class="mood" data-mood="sad">😢 Sad</button>
+            <button class="mood" data-mood="excited">🤩 Excited</button>
+            <button class="mood" data-mood="calm">😌 Calm</button>
+        </div>
+        
+        <!-- Dark Mode Toggle -->
+        <button id="toggle-dark-mode">Toggle Dark Mode 🌙</button>
+
+        <!-- Mood Calendar -->
+        <div class="calendar">
+            <h2>Mood Calendar</h2>
+            <div id="calendar-grid"></div>
+        </div>
+    </div>
+
+    <script src="project6.js"></script>
+</body>
+</html>
